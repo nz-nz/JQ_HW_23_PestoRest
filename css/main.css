@@ -1,0 +1,850 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+.wrapper #root {
+  height: 1000px;
+  width: 110%;
+  background-image: url("../img/bg-bunner-2.jpg");
+  background-size: cover;
+  background-repeat: round;
+  position: relative;
+  animation-duration: 25s;
+  animation-name: bganim;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+.wrapper #root #mainBlock {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: auto;
+}
+
+@keyframes bganim {
+  0% {
+    transform: skew(0deg);
+  }
+  33% {
+    transform: scale(1.1);
+  }
+  66% {
+    transform: scale(1);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+.headerbgColor {
+  background-color: rgba(115, 115, 115, 0.3);
+}
+
+#stickyHeader {
+  height: 15vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+#stickyHeader .headerLogo {
+  display: inline-block;
+  text-decoration: none;
+}
+#stickyHeader .pestoLogo {
+  margin: 25px;
+  margin-left: 50%;
+  display: inline-block;
+  position: relative;
+}
+#stickyHeader .stickyMenu {
+  list-style: none;
+  width: 35%;
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: 32.5%;
+}
+#stickyHeader .stickyMenu ul {
+  text-align: center;
+}
+#stickyHeader .stickyMenu li {
+  display: inline;
+  margin: 3%;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 600;
+  color: white;
+  transition: 0.5s;
+}
+#stickyHeader .stickyMenu li:first-child {
+  color: green;
+}
+#stickyHeader .stickyMenu li:hover {
+  color: #41A451;
+  text-shadow: 0 0 3px black;
+}
+#stickyHeader .bookNow {
+  display: inline-block;
+  position: absolute;
+  right: 10%;
+  top: 35%;
+  padding: 12px 30px;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#stickyHeader .bookNow:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.scrollHeader {
+  background-color: rgba(18, 18, 18, 0.99);
+}
+
+#welcomeBlock {
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10%;
+}
+#welcomeBlock .welcomeTextBox {
+  text-align: center;
+}
+#welcomeBlock .welcomeTextBox .welcomeHeader {
+  color: white;
+  font-size: 70px;
+  text-shadow: 0 0 10px black;
+  font-family: "pt serif";
+  position: relative;
+  z-index: 2;
+}
+#welcomeBlock .welcomeTextBox hr {
+  margin-left: auto;
+  margin-right: auto;
+  width: 7.5%;
+  height: 2px;
+  border: none;
+  background-color: white;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 999;
+}
+#welcomeBlock .welcomeTextBox .welcomeText {
+  font-size: 17.5px;
+  color: white;
+  text-shadow: 0px 1px 1px black;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+}
+
+#aboutUs {
+  height: 600px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#aboutUs .aboutUsInner {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  overflow: hidden;
+}
+#aboutUs .aboutUsInner .chefPhotoBox {
+  display: flex;
+  justify-content: center;
+  margin-left: -150%;
+  align-items: center;
+}
+#aboutUs .aboutUsInner .chefPhotoBox .backPhoto {
+  display: inline-block;
+  position: relative;
+}
+#aboutUs .aboutUsInner .chefPhotoBox .chefPhoto {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+}
+#aboutUs .aboutUsInner .aboutTextBlock {
+  width: 45%;
+  margin-left: 50px;
+  margin-right: -150%;
+}
+#aboutUs .aboutUsInner .aboutTextBlock * {
+  margin-top: 5%;
+  font-family: "Lusitana", serif;
+}
+#aboutUs .aboutUsInner .aboutTextBlock h1 {
+  margin-top: 20%;
+  font-weight: 600;
+}
+#aboutUs .aboutUsInner .aboutTextBlock p {
+  font-size: 19px;
+}
+#aboutUs .reservationInnerBlock {
+  height: 150px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 998;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px;
+}
+#aboutUs .reservationInnerBlock .reservationForm {
+  width: 100%;
+  text-align: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#aboutUs .reservationInnerBlock .reservationForm * {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+}
+#aboutUs .reservationInnerBlock .reservationForm select {
+  margin-left: 30%;
+  border: none;
+  font-size: 15px;
+  padding: 5px;
+  text-decoration: none;
+}
+#aboutUs .reservationInnerBlock .reservationForm select option {
+  background-color: black;
+  color: white;
+}
+#aboutUs .reservationInnerBlock .reservationForm .checkAvailability {
+  text-align: center;
+  padding: 15px;
+  background-color: #282828;
+  border: 1px #282828 solid;
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-left: 2%;
+}
+#aboutUs .reservationInnerBlock .reservationForm .checkAvailability:hover {
+  background-color: #41A451;
+  border-color: #41A451;
+}
+#aboutUs .reservationInnerBlock .title {
+  display: inline-block;
+  width: 15%;
+}
+#aboutUs .reservationInnerBlock .title input {
+  color: black;
+  font-size: 19px;
+  border: none;
+}
+#aboutUs .reservationInnerBlock .title ::placeholder {
+  color: black;
+}
+#aboutUs .reservationInnerBlock p {
+  font-size: 18px;
+  color: #696969;
+}
+#aboutUs .reservationInnerBlock .date input {
+  width: 80%;
+}
+#aboutUs .reservationInnerBlock .peopleCount {
+  text-align: center;
+}
+#aboutUs .reservationInnerBlock .peopleCount select {
+  text-align: center;
+  margin: 0;
+}
+
+#featuredOffers {
+  height: 1000px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+#featuredOffers .featuredInner {
+  margin-top: 10%;
+  width: 95%;
+  margin-top: -150%;
+}
+#featuredOffers .featuredInner .featuredTextBlock {
+  width: 60%;
+  height: 200px;
+  display: inline-block;
+  opacity: 0;
+}
+#featuredOffers .featuredInner .featuredTextBlock h1 {
+  font-size: 50px;
+  font-family: "Lusitana", serif;
+  font-weight: bold;
+}
+#featuredOffers .featuredInner .featuredTextBlock p {
+  margin-top: 5%;
+  color: rgba(0, 0, 0, 0.6);
+}
+#featuredOffers .featuredInner .featuredPhotoBlock {
+  width: 85%;
+  display: inline-block;
+}
+#featuredOffers .featuredInner .featuredPhotoBlock .featuredPhotoGrid {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-template-rows: 550px;
+  grid-gap: 2%;
+  text-align: center;
+}
+#featuredOffers .featuredInner .featuredPhotoBlock .featuredPhotoGrid .grid-image {
+  height: 370px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#featuredOffers .featuredInner .featuredPhotoBlock .featuredPhotoGrid .grid-item {
+  border-radius: 1%;
+  position: relative;
+}
+#featuredOffers .featuredInner .featuredPhotoBlock .featuredPhotoGrid .grid-item .grid-image1 {
+  background-image: url("../img/ravioli.jpg");
+  height: 370px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#featuredOffers .featuredInner .featuredPhotoBlock .featuredPhotoGrid .grid-item .grid-image2 {
+  background-image: url("../img/pasta.jpg");
+  height: 370px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#featuredOffers .featuredInner .featuredPhotoBlock .featuredPhotoGrid .grid-item .grid-image3 {
+  background-image: url("../img/icecream.jpg");
+  height: 370px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#featuredOffers .featuredInner .featuredPhotoBlock .featuredPhotoGrid .grid-text {
+  margin: 3%;
+}
+#featuredOffers .featuredInner .featuredPhotoBlock .featuredPhotoGrid .grid-text h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+#featuredOffers .featuredInner .featuredPhotoBlock .featuredPhotoGrid .grid-text p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #41A451;
+  font-size: 115%;
+}
+#featuredOffers .featuredInner .featuredPhotoBlock .featuredPhotoGrid .orderNow {
+  opacity: 0;
+  position: absolute;
+  left: 30%;
+  bottom: 50%;
+  padding: 3.5% 7%;
+  background-color: #41A451;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#featuredOffers .featuredInner .featuredPhotoBlock .featuredPhotoGrid .orderNow:hover {
+  background-color: #333333;
+}
+
+#restaurantMenuBlock {
+  height: 1300px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#restaurantMenuBlock * {
+  font-family: "Lusitana", serif;
+}
+#restaurantMenuBlock .restaurantMenuInner {
+  margin-top: 4%;
+  width: 65%;
+}
+#restaurantMenuBlock .restaurantMenuInner h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+#restaurantMenuBlock .restaurantMenuInner .menuBlock {
+  width: 100%;
+}
+#restaurantMenuBlock .restaurantMenuInner .menuBlock .menuNavHeader {
+  height: 100px;
+  width: 100%;
+  background-color: #353535;
+  margin: 0;
+  list-style: none;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+#restaurantMenuBlock .restaurantMenuInner .menuBlock .menuNavHeader ul {
+  text-align: center;
+  width: 45%;
+  margin-bottom: 0;
+}
+#restaurantMenuBlock .restaurantMenuInner .menuBlock .menuNavHeader ul li {
+  margin: 3%;
+  display: inline;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.3);
+  transition: 0.5s;
+  margin-left: 10%;
+}
+#restaurantMenuBlock .restaurantMenuInner .menuBlock .menuNavHeader ul li:first-child {
+  color: #ffffff;
+}
+#restaurantMenuBlock .restaurantMenuInner .menuBlock .menuNavHeader ul li:hover {
+  color: #ffffff;
+  text-shadow: 0 0 1px #ffffff;
+}
+#restaurantMenuBlock .restaurantMenuInner .menuBlock .menuItemsList {
+  background-color: #ffffff;
+  height: 900px;
+}
+#restaurantMenuBlock .restaurantMenuInner .menuBlock .menuItemsList .menuItemBlock {
+  padding: 3%;
+  padding-left: 10%;
+  text-align: left;
+  width: 90%;
+}
+#restaurantMenuBlock .restaurantMenuInner .menuBlock .menuItemsList .menuItemBlock .menuItemPrice {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #41A451;
+  font-size: 90%;
+}
+#restaurantMenuBlock .restaurantMenuInner .menuBlock .menuItemsList .menuItemBlock h2 {
+  margin-top: 1%;
+}
+#restaurantMenuBlock .restaurantMenuInner .menuBlock .menuItemsList .menuItemBlock p {
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 2%;
+}
+
+#photosBlock {
+  height: 858px;
+  width: 100%;
+  overflow: hidden;
+}
+#photosBlock .photosBlockInner {
+  width: 100%;
+}
+#photosBlock .photosBlockInner .gridTopline {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 429px;
+  margin-left: 150%;
+}
+#photosBlock .photosBlockInner .gridTopline .photogrid-item {
+  width: 100%;
+}
+#photosBlock .photosBlockInner .gridTopline .photogrid-item .grid-photo1 {
+  background-image: url("../img/gallery1_640x429.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#photosBlock .photosBlockInner .gridTopline .photogrid-item .grid-photo2 {
+  background-image: url("../img/gallery2_640x429.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#photosBlock .photosBlockInner .gridTopline .photogrid-item .grid-photo3 {
+  background-image: url("../img/gallery3_640x429.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#photosBlock .photosBlockInner .zoomButton {
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 40%;
+  padding: 25px 5px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
+  color: #000000;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4);
+  transition: 0.5s;
+  font-family: "Lusitana", serif;
+}
+#photosBlock .photosBlockInner .zoomButton:hover {
+  box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.4);
+}
+#photosBlock .photosBlockInner .gridBottomline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 429px;
+  margin-right: 150%;
+}
+#photosBlock .photosBlockInner .gridBottomline .photogrid-item {
+  width: 100%;
+}
+#photosBlock .photosBlockInner .gridBottomline .photogrid-item .grid-photo4 {
+  background-image: url("../img/gallery4_960x429.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#photosBlock .photosBlockInner .gridBottomline .photogrid-item .grid-photo5 {
+  background-image: url("../img/gallery5_960x429.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#photosModal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+}
+#photosModal .photosModalInner {
+  margin: auto;
+  position: relative;
+  width: 500%;
+  height: 100%;
+}
+#photosModal .photosModalInner .modalWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+#photosModal .photosModalInner .modalWrapper .photosSlider {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  height: 80%;
+}
+#photosModal .photosModalInner .modalWrapper .photosSlider .photosSliderPhoto {
+  width: 20%;
+  display: inline-block;
+  margin-left: 5%;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#photosModal .photosModalInner .modalWrapper .photosSlider #photo1 {
+  background-image: url("../img/gallery1_original.jpg");
+}
+#photosModal .photosModalInner .modalWrapper .photosSlider #photo2 {
+  background-image: url("../img/gallery2_original.jpg");
+}
+#photosModal .photosModalInner .modalWrapper .photosSlider #photo3 {
+  background-image: url("../img/gallery3_original.jpg");
+}
+#photosModal .photosModalInner .modalWrapper .photosSlider #photo4 {
+  background-image: url("../img/gallery4_original.jpg");
+}
+#photosModal .photosModalInner .modalWrapper .photosSlider #photo5 {
+  background-image: url("../img/gallery5_original.jpg");
+}
+#photosModal .leftButton {
+  position: absolute;
+  height: 10vh;
+  width: 10vh;
+  top: 45%;
+  left: 10%;
+  background-color: transparent;
+  border-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("../img/buttonLeft.png");
+  background-position: center;
+  background-size: contain;
+}
+#photosModal .rightButton {
+  position: absolute;
+  height: 10vh;
+  width: 10vh;
+  top: 45%;
+  right: 10%;
+  background-color: transparent;
+  border-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("../img/buttonRight.png");
+  background-position: center;
+  background-size: contain;
+}
+#photosModal .close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  height: 10vh;
+  width: 10vh;
+  background-color: transparent;
+  border-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("../img/buttonClose.png");
+  background-position: center;
+  background-size: contain;
+}
+
+#newsBlock {
+  height: 800px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  overflow: hidden;
+  margin-left: 150%;
+}
+#newsBlock .innerNews {
+  margin-left: auto;
+  margin-right: auto;
+}
+#newsBlock .innerNews h1 {
+  font-weight: bolder;
+  font-size: 50px;
+  margin-top: 5%;
+}
+#newsBlock .innerNews .newsSliderWrap {
+  width: 300%;
+  overflow: hidden;
+  margin-top: 8%;
+}
+#newsBlock .innerNews .newsSliderWrap .newsSlider {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+#newsBlock .innerNews .newsSliderWrap .newsSlider .sliderItem {
+  display: inline-block;
+  width: 11%;
+  height: 300px;
+  text-align: left;
+  position: relative;
+}
+#newsBlock .innerNews .newsSliderWrap .newsSlider .sliderItem .sliderDate {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  width: 30%;
+  border-radius: 5%;
+  text-align: center;
+  margin-left: 10%;
+}
+#newsBlock .innerNews .newsSliderWrap .newsSlider .sliderItem .sliderDate:hover {
+  background-color: #41A451;
+  cursor: pointer;
+}
+#newsBlock .innerNews .newsSliderWrap .newsSlider .sliderItem .readMore {
+  height: 30px;
+  margin-left: 10%;
+  cursor: pointer;
+  font-size: 130%;
+}
+#newsBlock .innerNews .newsSliderWrap .newsSlider .sliderItem .readMore:hover {
+  color: green;
+}
+#newsBlock .innerNews .newsSliderWrap .newsSlider .sliderItem h3 {
+  width: 80%;
+  margin-left: 10%;
+  cursor: pointer;
+}
+#newsBlock .innerNews .newsSliderWrap .newsSlider .sliderItem h3:hover {
+  color: #41A451;
+}
+#newsBlock .innerNews .newsSliderWrap .newsSlider .sliderItem p {
+  width: 80%;
+  margin-left: 10%;
+  color: rgba(0, 0, 0, 0.6);
+}
+#newsBlock .innerNews .newsSliderWrap .newsSlider .sliderItem:first-child {
+  margin-left: 1%;
+}
+#newsBlock .newsDots {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 3.5%;
+}
+#newsBlock .newsDots .newsdot {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+#newsBlock .newsDots .newsdot:hover {
+  background-color: #41A451;
+}
+#newsBlock .newsDots .newsdot:first-child {
+  background-color: #41A451;
+}
+
+#rightsReserved {
+  height: 450px;
+  width: 100%;
+  background-color: #323232;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+#rightsReserved .pestoLogo {
+  display: inline-block;
+  position: absolute;
+  top: 20%;
+  left: 47%;
+}
+#rightsReserved .rightsMenuBlock {
+  width: 100%;
+  text-decoration: none;
+  list-style: none;
+}
+#rightsReserved .rightsMenuBlock ul {
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  margin: 0;
+}
+#rightsReserved .rightsMenuBlock li {
+  display: inline-block;
+  margin: 3%;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 600;
+  color: white;
+  transition: 0.5s;
+  list-style: none;
+}
+#rightsReserved .rightsMenuBlock li:hover {
+  color: green;
+}
+#rightsReserved .socialsBlock {
+  height: 50px;
+  list-style: none;
+  width: 75%;
+}
+#rightsReserved .socialsBlock i {
+  cursor: pointer;
+}
+#rightsReserved .socialsBlock i:hover {
+  color: green;
+}
+#rightsReserved p {
+  width: 65%;
+  transition: 0.5s;
+}
+#rightsReserved p:hover {
+  color: green;
+}
+
+@media screen and (max-width: 1100px) {
+  #aboutUs .aboutUsInner .aboutTextBlock h1 {
+    margin-top: 40%;
+    font-size: 30px;
+  }
+  #aboutUs .aboutUsInner .aboutTextBlock p {
+    font-size: 16px;
+  }
+
+  #newsBlock .innerNews .newsSliderWrap .newsSlider .sliderItem .sliderDate {
+    width: 25%;
+    font-size: 75%;
+  }
+  #newsBlock .innerNews .newsSliderWrap .newsSlider .sliderItem h3 {
+    font-size: 125%;
+  }
+}
+@media screen and (max-width: 900px) {
+  #aboutUs .aboutUsInner .aboutTextBlock h1 {
+    margin-top: 65%;
+    font-size: 25px;
+  }
+  #aboutUs .aboutUsInner .aboutTextBlock p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 666px) {
+  #aboutUs .aboutUsInner {
+    width: 95%;
+  }
+  #aboutUs .aboutUsInner .chefPhotoBox {
+    width: 65%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

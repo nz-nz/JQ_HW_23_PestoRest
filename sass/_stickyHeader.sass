@@ -1,0 +1,62 @@
+.headerbgColor
+    background-color: rgba(115, 115, 115, 0.3)
+#stickyHeader
+    height: 15vh
+    width: 100%
+    // background-color: rgba(115, 115, 115, 0.3)
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 999
+
+    .headerLogo
+        display: inline-block
+        text-decoration: none
+    .pestoLogo
+        margin: 25px
+        margin-left: 50%
+        display: inline-block
+        position: relative
+        
+    .stickyMenu
+        list-style: none
+        width: 35%
+        display: inline-block
+        position: absolute
+        top: 30%
+        left: 32.5%
+        ul
+            text-align: center
+
+        li
+            display: inline
+            margin: 3%
+            cursor: pointer
+            font-size: 15px
+            line-height: 1.7
+            font-weight: 600
+            color: white
+            transition: .5s
+        li:first-child
+            color: green
+        li:hover
+            color: #41A451
+            text-shadow: 0 0 3px black
+    .bookNow
+        display: inline-block
+        position: absolute
+        right: 10%
+        top: 35%
+        padding: 12px 30px
+        font-size: 13px
+        line-height: 20px
+        font-weight: 600
+        background-color: white
+        cursor: pointer
+        transition: .5s
+    .bookNow:hover
+        background-color: black
+        color: white
+        text-decoration: none
+.scrollHeader
+    background-color: rgba(18,18,18,0.99)

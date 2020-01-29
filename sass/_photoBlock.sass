@@ -1,0 +1,159 @@
+#photosBlock
+    height: 858px
+    width: 100%
+    overflow: hidden
+    .photosBlockInner
+        width: 100%
+        .gridTopline
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            grid-template-rows: 429px
+            margin-left: 150%
+            .photogrid-item
+                width: 100%
+                .grid-photo1
+                    background-image: url('../img/gallery1_640x429.jpg')
+                    height: 100%
+                    background-position: center
+                    background-size: cover
+                    position: relative
+                .grid-photo2
+                    background-image: url('../img/gallery2_640x429.jpg')
+                    height: 100%
+                    background-position: center
+                    background-size: cover
+                    position: relative
+                .grid-photo3
+                    background-image: url('../img/gallery3_640x429.jpg')
+                    height: 100%
+                    background-position: center
+                    background-size: cover
+                    position: relative
+                    
+
+        .zoomButton
+            display: inline-block
+            position: absolute
+            opacity: 0
+            top: 50%
+            left: 40%
+            padding: 25px 5px
+            text-align: center
+            font-weight: bold
+            cursor: pointer
+            width: 75px
+            height: 75px
+            color: #000000
+            border-radius: 50%
+            background-color: #ffffff
+            box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4)
+            transition: .5s
+            font-family: 'Lusitana', serif
+        .zoomButton:hover
+            box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.4)
+        .gridBottomline
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 429px
+            margin-right: 150%
+            .photogrid-item
+                width: 100%
+                .grid-photo4
+                    background-image: url('../img/gallery4_960x429.jpg')
+                    height: 100%
+                    background-position: center
+                    background-size: cover
+                    position: relative
+                .grid-photo5
+                    background-image: url('../img/gallery5_960x429.jpg')
+                    height: 100%
+                    background-position: center
+                    background-size: cover
+                    position: relative
+#photosModal
+    display: none
+    width: 100%
+    height: 100%
+    position: fixed
+    left: 0
+    top: 0
+    background-color: rgba(0, 0, 0, 0.9)
+    z-index: 9999
+    .photosModalInner
+        margin: auto
+        position: relative
+        width: 500%
+        height: 100%
+        .modalWrapper
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            overflow: hidden
+            display: flex
+            align-items: center
+            .photosSlider
+                width: 80%
+                display: flex
+                justify-content: center
+                vertical-align: middle
+                height: 80%
+                .photosSliderPhoto
+                    width: 20%
+                    display: inline-block
+                    margin-left: 5%
+                    background-size: auto
+                    background-position: center
+                    background-repeat: no-repeat
+                #photo1
+                    background-image: url('../img/gallery1_original.jpg')
+                #photo2
+                    background-image: url('../img/gallery2_original.jpg')
+                #photo3
+                    background-image: url('../img/gallery3_original.jpg')
+                #photo4
+                    background-image: url('../img/gallery4_original.jpg')
+                #photo5
+                    background-image: url('../img/gallery5_original.jpg')
+    .leftButton
+        position: absolute
+        height: 10vh
+        width: 10vh
+        top: 45%
+        left: 10%
+        background-color: transparent
+        border-color: transparent
+        background-repeat: no-repeat
+        background-image: url("../img/buttonLeft.png")
+        background-position: center
+        background-size: contain
+
+    .rightButton    
+        position: absolute
+        height: 10vh
+        width: 10vh
+        top: 45%
+        right: 10%
+        background-color: transparent
+        border-color: transparent
+        background-repeat: no-repeat
+        background-image: url("../img/buttonRight.png")
+        background-position: center
+        background-size: contain
+    .close
+        position: absolute
+        top: 5%
+        right: 5%
+        height: 10vh
+        width: 10vh
+        background-color: transparent
+        border-color: transparent
+        background-repeat: no-repeat
+        background-image: url("../img/buttonClose.png")
+        background-position: center
+        background-size: contain
+
+  
+            
+

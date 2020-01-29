@@ -1,0 +1,107 @@
+#aboutUs
+    height: 600px
+    background-color: #f5f5f5
+    display: flex
+    justify-content: center
+    position: relative
+    // overflow: hidden
+    // text-align: center
+    .aboutUsInner
+        display: flex
+        justify-content: space-between
+        width: 80%
+        overflow: hidden
+        .chefPhotoBox
+            display: flex
+            justify-content: center
+            margin-left: -150%
+            align-items: center
+            .backPhoto
+                display: inline-block
+                position: relative
+            .chefPhoto
+                display: inline-block
+                position: absolute
+                bottom: 0
+                left: 15%
+        .aboutTextBlock
+            width: 45%
+            margin-left: 50px
+            margin-right: -150%
+            *
+                margin-top: 5%
+                font-family: 'Lusitana', serif
+            h1
+                margin-top: 20%
+                font-weight: 600
+            p
+                font-size: 19px
+
+
+    .reservationInnerBlock
+        height: 150px
+        width: 90%
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        background-color: #ffffff
+        position: absolute
+        transform: translateY(-50%)
+        z-index: 998
+        border-radius: 10px
+        box-shadow: 10px 10px 10px
+        .reservationForm
+            width: 100%
+            text-align: initial
+            display: flex
+            justify-content: center
+            align-items: center
+            *
+                margin-left: 10px
+                margin-right: 10px
+                border: none
+            select
+                margin-left: 30%
+                border: none
+                font-size: 15px
+                padding: 5px
+                text-decoration: none
+                option
+                    background-color: black
+                    color: white
+            .checkAvailability
+                text-align: center
+                padding: 15px
+                background-color: #282828
+                border: 1px #282828 solid
+                color: white
+                margin: 0
+                font-weight: bold
+                transition: .5s
+                cursor: pointer
+                margin-left: 2%
+            .checkAvailability:hover
+                background-color: #41A451
+                border-color: #41A451
+        .title
+            display: inline-block
+            width: 15%
+            input
+                color: black
+                font-size: 19px
+                border: none
+            ::placeholder
+                color: black
+        p
+            font-size: 18px
+            color: #696969
+        .date
+            input
+                width: 80%
+        .peopleCount
+            text-align: center
+            select
+                text-align: center
+                margin: 0
+        
